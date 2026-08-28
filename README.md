@@ -1,9 +1,17 @@
+<div align="center">
+
 # 🐧 Linux Toolkit
 
-A small collection of practical Bash scripts for Linux system administration, monitoring, maintenance, backups, and package management.
+### Practical Bash scripts for Linux administration & automation
 
 [![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Linux](https://img.shields.io/badge/Linux-System%20Tools-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/)
+
+</div>
+
+---
+
+A collection of practical Bash scripts for system information, monitoring, maintenance, backups and package management.
 
 ## ✨ What's Included
 
@@ -12,7 +20,7 @@ A small collection of practical Bash scripts for Linux system administration, mo
 | `system-info.sh` | Displays OS, kernel, CPU, memory, uptime and disk information |
 | `disk-usage.sh` | Shows filesystem usage and large directories |
 | `backup.sh` | Creates timestamped `.tar.gz` backups of a directory |
-| `package-update.sh` | Updates packages using `pacman`, `apt`, or `dnf` |
+| `package-update.sh` | Updates packages using `pacman`, `apt` or `dnf` |
 | `cleanup.sh` | Performs package cleanup and reports temporary-file usage |
 
 ## 📁 Project Structure
@@ -32,42 +40,22 @@ linux-toolkit/
 
 ## 🚀 Quick Start
 
-Clone the repository:
-
 ```bash
-git clone https://github.com/BlockZGaming/linux-toolkit.git
+git clone https://github.com/OmTalekarDev/linux-toolkit.git
 cd linux-toolkit
-```
-
-Make the scripts executable:
-
-```bash
 chmod +x scripts/*.sh
-```
-
-Run a script:
-
-```bash
 ./scripts/system-info.sh
 ```
 
 ## 💾 Backup Example
 
-Back up `~/Documents` to `~/backups`:
-
-```bash
-./scripts/backup.sh
-```
-
-Or specify custom paths:
-
 ```bash
 ./scripts/backup.sh /path/to/source /path/to/backup
 ```
 
-## 📦 Supported Package Managers
+The script creates a timestamped `.tar.gz` archive in the destination directory.
 
-The update and cleanup scripts detect:
+## 📦 Supported Package Managers
 
 - Arch Linux — `pacman`
 - Debian/Ubuntu — `apt`
@@ -75,7 +63,7 @@ The update and cleanup scripts detect:
 
 ## ⚠️ Notes
 
-Some maintenance operations use `sudo`. Review commands before running them on an important system, especially cleanup and package-management commands.
+Some maintenance operations use `sudo`. Review commands before running them on important systems, especially cleanup and package-management operations.
 
 ## 🛣️ Roadmap
 
@@ -96,4 +84,4 @@ Some maintenance operations use `sudo`. Review commands before running them on a
 
 ---
 
-Built as part of the **BlockZGaming** developer portfolio.
+Built by **[Om Talekar](https://github.com/OmTalekarDev)**.
